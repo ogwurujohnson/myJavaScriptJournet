@@ -1,0 +1,18 @@
+<button>press me</button>
+
+<script>
+    var button = document.querySelector('button');
+
+    //using the addEventListener
+    /*button.addEventListener('click', welcomeUser);
+
+    function welcomeUser(){
+        var name = prompt('Enter your name?');
+        alert('Welcome '+name+ ' to our system');
+    }*/
+
+    button.onclick = function(){
+        var name = prompt('Enter your name?');
+        alert('Welcome '+name+ ' to our system');
+    }
+</script>
