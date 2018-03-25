@@ -1,0 +1,15 @@
+<input id="age" type="text"></input>
+<button>calculate</button>
+
+<script>
+    var age = document.querySelector('#age');
+    
+    var btn = document.querySelector('button');
+
+    btn.addEventListener('click', convertAge);
+
+    function convertAge(){
+        var convertedAge = age.value * 365;
+        alert(convertedAge);
+    }
+</script>
