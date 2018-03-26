@@ -1,0 +1,12 @@
+<select class="ul"></select>
+<script>
+    var myArray = ['dog','chicken','pig'];
+
+    var list = document.querySelector('.ul');
+    for(i = 0; i<=myArray.length;i++){
+    var listItem = document.createElement('option');
+    
+    listItem.textContent = myArray[i];
+    list.appendChild(listItem);
+    }
+</script>
