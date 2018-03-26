@@ -13,11 +13,17 @@
     var select = document.querySelector('select');
     var para = document.querySelector('p');
 
-    select.addEventListener('change',setWeather);
+    //you can use this
+    //select.addEventListener('change',setWeather);
+    /*function setWeather(){
 
-    function setWeather(){
+    }*/
+            //OR
+
+    select.onchange = function setWeather(){
         var choice = select.value;
-        if(choice === "rainy"){
+        //using if else statement(** ITS WORKING YOU CAN UNCOMMENT AND COMMENT THE SWITCH STATEMENTS TO TEST!!)
+        /*if(choice === "rainy"){
             para.textContent = "Its about to rain please go wear a pant";
         }
         else if(choice === "sunny"){
@@ -27,10 +33,30 @@
             para.textContent = "Come lets go play in the snow";
         }
         else if(choice === "overcast"){
-            para.textContent = "i dont know wat these means"
+            para.textContent = "i dont know wat these means";
         }
         else{
-            para.textContent = "Nothing";
+            para.textContent = "Choose a weather jare";
+        }*/
+
+        //using switch for conditional
+        switch(choice){
+            case 'rainy':
+                para.textContent = "Its about to rain please go wear a pant";
+                break;
+            case 'sunny':
+                para.textContent = "The sun is too much remove your cloth jare";
+                break;
+            case 'snowing':
+                para.textContent = "Come lets go play in the snow";
+                break;
+            case 'overcast':
+                para.textContent = "i dont know wat these means";
+                break;
+            default:
+                para.textContent = "Gerout";
+                break;
+
         }
     }
 </script>
