@@ -1,0 +1,36 @@
+<label for="weather">Select the weather type today: </label>
+<select id="weather">
+    <option value="">--Make a choice--</option>
+    <option value="sunny">Sunny</option>
+    <option value="rainy">Rainy</option>
+    <option value="snowing">Snowing</option>
+    <option value="overcast">Overcast</option>
+</select>
+
+<p></p>
+
+<script>
+    var select = document.querySelector('select');
+    var para = document.querySelector('p');
+
+    select.addEventListener('change',setWeather);
+
+    function setWeather(){
+        var choice = select.value;
+        if(choice === "rainy"){
+            para.textContent = "Its about to rain please go wear a pant";
+        }
+        else if(choice === "sunny"){
+            para.textContent = "The sun is too much remove your cloth jare";
+        }
+        else if(choice === "snowing"){
+            para.textContent = "Come lets go play in the snow";
+        }
+        else if(choice === "overcast"){
+            para.textContent = "i dont know wat these means"
+        }
+        else{
+            para.textContent = "Nothing";
+        }
+    }
+</script>
