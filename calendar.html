@@ -1,0 +1,40 @@
+<select>
+    <option value="january">January</option>
+    <option value="february">February</option>
+    <option value="november">November</option>
+    <option value="june">June</option>
+    <option value="august">August</option>
+</select>
+
+<h1></h1>
+<ul>
+
+</ul>
+
+<script>
+    var select = document.querySelector('select');
+    var list = document.querySelector('ul');
+    var h1 = document.querySelector('h1');
+
+    function changeCalendar(days, choice){
+        list.innerHTML = '';
+        h1.textContent = choice;
+        for(var i=0; i<=days; i++){
+        var listItem = document.createElement('li');
+        listItem.textContent = i;
+        list.appendChild(listItem);
+        }
+    }
+
+    select.onchange = function(){
+        var choice = select.value;
+        if(choice === 'february' || choice === 'june'){
+            days = 29;
+        } 
+        else{
+            days = 31;
+        }
+        changeCalendar(days,choice);
+    }
+    changeCalendar(31,'January');
+</script>

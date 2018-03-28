@@ -1,0 +1,38 @@
+<button>See Guest List</button>
+<div>
+    <h1>Accepted Guest</h1>
+    <ul id="accept"></ul>
+</div>
+
+<div>
+    <h1>Rejected Guest</h1>
+    <ul id="reject"></ul>
+</div>
+
+
+
+<script>
+    var names = ['james','chuks','lola','steve','isinwa','peace','sarah','unclejoe','chuks'];
+    var accepted = document.querySelector('#accept');
+    var rejected = document.querySelector('#reject');
+    var btn = document.querySelector('button');
+
+
+    btn.onclick = function(){
+        for(i=0;i<names.length;i++){
+            if(names[i] === 'lola' || names[i] === 'sarah'){
+                rejected.innerHTML;
+                var listItem = document.createElement('li');
+                listItem.textContent = names[i];
+                rejected.appendChild(listItem)
+            }
+            else{
+                accepted.innerHTML;
+                var listItem = document.createElement('li');
+                listItem.textContent = names[i];
+                accepted.appendChild(listItem);
+            }
+        }
+    }
+
+</script>
