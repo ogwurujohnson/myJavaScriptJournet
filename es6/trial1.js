@@ -1,3 +1,4 @@
+"use strict";
 let year = 2018;
 
 let age = (dob) => {
