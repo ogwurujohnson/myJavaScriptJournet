@@ -13,6 +13,7 @@ function buckyFunction(){
     let saying = 'Bacon is good';
     console.log('\nBefore if:', saying);
 
+    //a different block
     if(isHorse){
         let saying = 'I am a horse';
         console.log('Inside if:', saying);
