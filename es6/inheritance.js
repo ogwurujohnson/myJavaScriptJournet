@@ -35,6 +35,7 @@ class Programmer extends Person{
 }
 
 let bucky = new Person('johnson', 23, 7000);
+bucky instanceof Employee;
 bucky.displayName();
 bucky.displayAge();
 bucky.displayWeight();
