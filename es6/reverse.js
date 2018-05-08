@@ -6,5 +6,5 @@ const reverseStr = str => {
     return joinString;
 };
 
-let out = reverseStr('toNslytinutroppOtuBdetubirtsiDylnevEslecnaillirB');
+let out = reverseStr('toNsIytinutroppOtuBdetubirtsiDnevEsIecnaillirB');
 console.log(out);
