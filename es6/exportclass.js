@@ -1,4 +1,4 @@
-class Animal{
+export class Animal{
     constructor(name,sound){
         this._name = name;
         this._sound = sound;
