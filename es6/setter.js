@@ -34,3 +34,4 @@ let person = {
   //calling a setter
   person.age = 'Thirty-nine';//returns invalid input
   person.age = 39;//returns valid input
+  console.log(person._age);
