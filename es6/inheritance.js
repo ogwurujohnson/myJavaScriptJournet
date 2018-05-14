@@ -1,4 +1,4 @@
-"use strict";
+
 
 class Person{
     //always needed.
@@ -35,7 +35,7 @@ class Programmer extends Person{
 }
 
 let bucky = new Person('johnson', 23, 7000);
-bucky instanceof Employee;
+bucky instanceof Person;
 bucky.displayName();
 bucky.displayAge();
 bucky.displayWeight();
