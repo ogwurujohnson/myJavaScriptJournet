@@ -66,4 +66,11 @@ let halley = {
       this._remainingVacationDays = this._remainingVacationDays - daysOff;
     }
   }
+
+  //calling the methods
+const surgeonCurry = new Surgeon('Curry', 'Cardiovascular');
+console.log(surgeonCurry.name);
+surgeonCurry.takeVacationDays(3);
+console.log(surgeonCurry.remainingVacationDays);
+const surgeonDurant = new Surgeon('Durant', 'Orthopedics');
   
