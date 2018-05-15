@@ -1,10 +1,11 @@
 const xhr = new XMLHttpRequest();
-const url = '';
+const url = 'https://api-to-call.com/endpoint';
 
 xhr.responseType = 'json';
 xhr.onreadystatechange = function(){
-    if(readyState === XMLHttpRequest.DONE){
+    if(xhr.readyState === XMLHttpRequest.DONE){
         //what program does with response
+        console.log(xhr.response);
     }
 };
 
