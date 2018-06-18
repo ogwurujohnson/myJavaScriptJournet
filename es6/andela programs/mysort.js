@@ -20,5 +20,11 @@ function mySort(num) { // An algorithm that takes a list of int, returns a new l
     let newOdd = odd.sort(function(a,b) {return a-b}); // sorts the contect of the odd array
     let newEven = even.sort(function(a,b) {return a-b}); // sorts the contect of the odd array
     return result = newOdd.concat(newEven); // returns the new array.
+    mySort( [90, 45, 66, 'bye', 100.5] );
+    //mySort([1,2,34,54,55,34,32,11,19,17, 'kunl',54,66,13])
+    
+    //mySort('laskdldf');
+    
+    //mySort([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
   
 }
