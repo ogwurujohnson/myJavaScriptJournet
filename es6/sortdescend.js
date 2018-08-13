@@ -4,7 +4,7 @@ const sortByNameLength = (states) => {
     states.sort(function(a,b){
         return b.length-a.length;
     });
-    return states[20];
+    return states[5];
 }
 
 let sortedState = sortByNameLength(allStates);
