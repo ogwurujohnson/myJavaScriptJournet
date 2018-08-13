@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Quote Application</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            
+        <main class="app">
+
+            <section class="quotes">
+                <div id="showQuote" class="quote-text"></div>
+            </section>
+            <section class="controls">
+                <a></a>
+                <button type="button" id="generate" class="view-quote button">New Quote</button>
+            </section>
+        </main>
+
+        <section class="add-new" id="hiddenForm" hidden>
+                <textarea id="quote" placeholder="Add New Quote"></textarea>
+                <button id="button" class="new-quote button">Save Quote</button>
+        </section>
+
+        <!--Important controls for twitter and adding new quotes-->
+        <section class="controls">
+                <a class="twitter button" id="tweet" target="_blank" rel="noreferrer">Tweet</a>
+                <button type="button" id="saveForm" class="new-quote button">Add Favorite Quote</button>
+        </section>
+        
+        
+        
+      
+
+        <script src="script.js"></script>
+    </body>
+</html>
